@@ -3,7 +3,7 @@ import React from 'react';
 const SeasonDisplay = () => {
     return (
         <div>
-            Season Display
+            <h1>Season Display</h1>
         </div>
     )
 };
