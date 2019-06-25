@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './Components/SeasonDisplay';
+import Loader from './Components/Loader';
+
+
 
 
 class App extends React.Component {
@@ -29,7 +32,7 @@ class App extends React.Component {
         if (!this.state.errorMessage && this.state.lat) {
             return <SeasonDisplay lat={this.state.lat}/>
         } 
-        return <div>Loading, please be patient.</div> 
+        return <Loader />; 
     }
 }
 
